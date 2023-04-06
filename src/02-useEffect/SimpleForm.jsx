@@ -18,13 +18,13 @@ export const SimpleForm = () => {
     });
   };
 
-//   useEffect(() => {
-//     console.log("useEffect Call");
-//   }, [formState]);
+  //   useEffect(() => {
+  //     console.log("useEffect Call");
+  //   }, [formState]);
 
-//   useEffect(() => {
-//     console.log("Email Chnage");
-//   }, [email]);
+  //   useEffect(() => {
+  //     console.log("Email Chnage");
+  //   }, [email]);
 
   useEffect(() => {
     // console.log("Username Chnage");
@@ -42,7 +42,6 @@ export const SimpleForm = () => {
         value={username}
         onChange={onInputChange}
       />
-      {username.toLowerCase() === "jahiker" && <Message />}
       <input
         type="email"
         name="email"
@@ -51,6 +50,7 @@ export const SimpleForm = () => {
         value={email}
         onChange={onInputChange}
       />
+      {username.toLowerCase() === "jahiker" && <Message />}
     </>
   );
 };
