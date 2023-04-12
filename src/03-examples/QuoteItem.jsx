@@ -12,7 +12,7 @@ export const QuoteItem = ({ quote, author }) => {
   }, [quote]);
   return (
     <>
-      <blockquote className="blockquote text-end" style={{ display: "flex" }}>
+      <blockquote className="blockquote text-end" style={{ display: "flex", justifyContent: 'space-between', alignItems: 'start' }}>
         <p className="mb-2" ref={pRef}>
           {quote}
         </p>
